@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="formatação2.css">
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Marcar Consultas</h1>
+        <p id="subtitulo"><strong>Insira seus dados abaixo</strong></p>
+        <br>
+    </div>
+
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="8226a22e-e6c0-46ea-afeb-e011f933f59c">
+        <!-- <input type="hidden" name="redirectTo" value="link para o meu site já postado"> -->
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong>></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="name" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual seu gênero?</strong></label>
+            <label>
+                <input type="radio" name="gênero" value="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="gênero" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="gênero" value="outro">Outro
+            </label>       
+        </div>
+
+        <div class="campo">
+            <label for="idade"><strong>Faixa estária</strong></label>
+                <select id="idade">
+                <option selected disabled value="">Selecione</option>
+                <option>até 19 anos</option>
+                <option>20 até 59</option>
+                <option>60 em diante</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione o tipo de consulta</strong></label><br><br>
+                <input type="checkbox" id="especialidade1" name="especialidade1" value="Cardiologia">
+                <label for="especialidade1">Cardiologia</label>
+                <input type="checkbox" id="especialidade2" name="especialidade2" value="Dermatologia">
+                <label for="especialidade2">Dermatologia</label>
+                <input type="checkbox" id="especialidade3" name="especialidade3" value="Endocrinologia">
+                <label for="especialidade3">Endocrinologia</label>  
+                <input type="checkbox" id="especialidade4" name="especialidade4" value="Gastroenterologia">
+                <label for="especialidade4">Gastroenterologia</label>
+                <br>
+                <br>
+                <input type="checkbox" id="especialidade5" name="especialidade5" value="Ginecologia e obstetrícia">
+                <label for="especialidade5">Ginecologia e obstetrícia</label>
+                <input type="checkbox" id="especialidade6" name="especialidade6" value="Pediatria">
+                <label for="especialidade6">Pediatria</label>
+                <input type="checkbox" id="especialidade7" name="especialidade7" value="Psiquiatria">
+                <label for="especialidade7">Psiquiatria</label>
+                <input type="checkbox" id="especialidade8" name="especialidade8" value="Oftalmologia">
+                <label for="especialidade8">Oftalmologia</label>
+                <br>
+                <br>
+                <input type="checkbox" id="especialidade9" name="especialidade9" value="Oncologia">
+                <label for="especialidade9">Oncologia</label>
+                <input type="checkbox" id="especialidade10" name="especialidade10" value="Ortopedia e traumatologia">
+                <label for="especialidade10">Ortopedia e traumatologia</label>
+                <input type="checkbox" id="especialidade11" name="especialidade11" value="Otorrinolaringologia">
+                <label for="especialidade11">Otorrinolaringologia</label>
+                <input type="checkbox" id="especialidade12" name="especialidade12" value="Urologia">
+                <label for="especialidade12">Urologia</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco sobre o que está sentindo</strong></label>
+            <textarea rows="8" style="width: 26em" id="message" name="message"></textarea>
+        </div>
+
+        <button class="botão" type="submit">Concluído</button>
+    </form>
+
+</body>
+</html>

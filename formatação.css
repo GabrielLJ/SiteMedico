@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 34px;
+    margin:auto;
+    font-family:Arial;
+    color:white; 
+    background-color: #6A5ACD;
+    font-size: 18px;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Arial;
+    background: url("Imagens/Fundo-2.jpg");
+    background-size: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav{
+    background-color: gray;
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav  /*quando esse checkbox for assionada ele vai fazer um  evento no elemento nav*/
+{
+    transform: translateX(350px);
+}
+
+ul{
+    top: 70px;
+    position: absolute;
+    width: 350px;
+}
+
+a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
